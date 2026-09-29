@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Truck Dispatch Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                🚚
+                <span>DispatchPro</span>
+            </div>
+
+            <nav>
+                <a href="#" class="active">📊 Dashboard</a>
+                <a href="#">🚛 Drivers</a>
+                <a href="#">📦 Loads</a>
+                <a href="#">📍 Routes</a>
+                <a href="#">💰 Earnings</a>
+                <a href="#">⚙️ Settings</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Truck Dispatch Management System</p>
+                </div>
+
+                <div class="user">
+                    <div class="avatar">SA</div>
+
+                    <div>
+                        <strong>Saram Ali</strong>
+                        <small>Dispatcher</small>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- Statistics -->
+
+            <section class="stats">
+
+                <div class="card">
+                    <div class="icon">🚛</div>
+                    <div>
+                        <p>Total Trucks</p>
+                        <h2>12</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📦</div>
+                    <div>
+                        <p>Active Loads</p>
+                        <h2>8</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon">💵</div>
+                    <div>
+                        <p>Today's Revenue</p>
+                        <h2>$7,850</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📍</div>
+                    <div>
+                        <p>In Transit</p>
+                        <h2>6</h2>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Loads -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Active Loads</h2>
+                        <p>Current dispatch activity</p>
+                    </div>
+
+                    <button class="add-btn">
+                        + Add Load
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Load #</th>
+                                <th>Driver</th>
+                                <th>Pickup</th>
+                                <th>Delivery</th>
+                                <th>Rate</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>#LD1001</td>
+                                <td>John Smith</td>
+                                <td>Seattle, WA</td>
+                                <td>Portland, OR</td>
+                                <td>$1,850</td>
+                                <td>
+                                    <span class="status transit">
+                                        In Transit
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#LD1002</td>
+                                <td>Mike Johnson</td>
+                                <td>Grandview, WA</td>
+                                <td>Prosser, WA</td>
+                                <td>$750</td>
+                                <td>
+                                    <span class="status loaded">
+                                        Loaded
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#LD1003</td>
+                                <td>David Brown</td>
+                                <td>Sumner, WA</td>
+                                <td>Plymouth, WA</td>
+                                <td>$1,200</td>
+                                <td>
+                                    <span class="status waiting">
+                                        Waiting
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- Quick Actions -->
+
+            <section class="quick">
+
+                <h2>Quick Actions</h2>
+
+                <div class="quick-grid">
+
+                    <button>🚛 Add Driver</button>
+                    <button>📦 Create Load</button>
+                    <button>📄 Upload BOL</button>
+                    <button>💰 View Revenue</button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
